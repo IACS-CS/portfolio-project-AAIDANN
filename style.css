@@ -1,5 +1,7 @@
 /* There's some sample CSS here which you can use or nuke as you like */
 
+@import url('https://fonts.cdnfonts.com/css/game-of-squids');
+
 html {
   /* Make #id links scroll smoothly */
   scroll-behavior: smooth;
@@ -14,7 +16,13 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+.hero h1 {
+  transform: translateX(-10vw);
+  transition: transform 1s;
+}
+.hero.active h1 {
+  transform: translateX(0);
+}
 .hero {
   box-sizing: border-box;
   /* Full screen hero section */
@@ -24,9 +32,9 @@ body {
   display: grid;
   place-content: center;
   /* Custom text and stuff */
-  background: #0033a0;
+  background: #249f9c;
   color: white;
-  font-family: Futura;
+  font-family: 'Game Of Squids', sans-serif;
   font-weight: bold;
   font-size: 70px;
   text-align: center;
@@ -42,7 +50,8 @@ body {
   transition: background 0.5s;
 }
 .hero.active {
-  background: #c6093b;
+  background: #ed1b76;
+  color:#249f9c
 }
 
 main {
