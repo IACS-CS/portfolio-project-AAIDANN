@@ -16,9 +16,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-.hero h1 {
+h1 {
   transform: translateX(-10vw);
-  transition: transform 1s;
+  transition: transform 2s;
 }
 .hero.active h1 {
   transform: translateX(0);
@@ -32,8 +32,8 @@ body {
   display: grid;
   place-content: center;
   /* Custom text and stuff */
-  background: #249f9c;
-  color: white;
+  background: #ed1b76;
+  color: #249f9c;
   font-family: 'Game Of Squids', sans-serif;
   font-weight: bold;
   font-size: 70px;
@@ -42,16 +42,16 @@ body {
 .hero a {
   color: white;
   text-decoration: underline;
-  text-decoration-color: #c6093b;
+  text-decoration-color: #ed1b76;
 }
 
 /* A little "activation" to demonstrate JS is working in the template */
 .hero {
-  transition: background 0.5s;
+  transition: background 0.1s;
 }
 .hero.active {
-  background: #ed1b76;
-  color:#249f9c
+  background: #249f9c;
+  color: #ed1b76;
 }
 
 main {
@@ -62,3 +62,4 @@ main {
   font-size: 18px; /* choose a font size */
   margin: 0 auto; /* center the content */
 }
+

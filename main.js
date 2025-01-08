@@ -10,3 +10,7 @@ hero.addEventListener("click", () => {
   console.log("They clicked the hero!");
   hero.classList.toggle("active");
 });
+document.addEventListener("DOMContentLoaded", () => {
+  let hero = document.querySelector(".hero"); // Had ChatGPT help me with this
+  hero.classList.add("active"); 
+});
