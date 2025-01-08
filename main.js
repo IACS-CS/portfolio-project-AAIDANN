@@ -45,7 +45,7 @@ turtle.setStrokeStyle("white");
 
 
 turtle.start();
-drawEquilateralTriangle(600);
+drawEquilateralTriangle(700);
 
 
 

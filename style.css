@@ -65,9 +65,18 @@ main {
 }
 
 canvas {
-  margin:auto;
-position:absolute;
-top:0;
-z-index:4;
-background-color: transparent;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    background-color: transparent;
+    
 }
+
+.cta {
+  z-index:5;
+  color:black;
+  font-size:55px;
+}
+
