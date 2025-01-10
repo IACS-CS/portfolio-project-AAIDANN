@@ -41,7 +41,7 @@ h1 {
   position:relative;
 }
 .hero a {
-  color: white;
+  color: black;
   text-decoration: underline;
   text-decoration-color: #ed1b76;
 }
@@ -66,17 +66,16 @@ main {
 
 canvas {
     position: absolute;
-    top: 80%;
-    left: 25%;
+    top: 50dvh;
     transform: translate(-50%, -50%);
     z-index: 4;
-    background-color: transparent;
-    
+    width: 100dvh;
+    height: 100dvh;
+    left: 50%;
+    box-sizing: border-box;
 }
 
 .cta {
   z-index:5;
-  color:black;
-  font-size:55px;
 }
 

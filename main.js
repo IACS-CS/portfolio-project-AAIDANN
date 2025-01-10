@@ -1,6 +1,6 @@
 // Write JavaScript here.
 console.log("main.js loaded successfully!");
-
+import 'animate.css';
 /* Some sample JavaScript: this just listens 
 for any "click" on the hero element and then
 toggles the "active" class which we use to
@@ -28,6 +28,7 @@ const turtle = new RealTurtle.default(canvas, {
 });
 
 const drawEquilateralTriangle = (size) => {
+  turtle.setPosition(250, 900);
   turtle.right(90);
   turtle.penDown(); // Make sure the pen is down to draw
   for (let i = 0; i < 3; i++) {
