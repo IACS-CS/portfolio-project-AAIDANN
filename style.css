@@ -116,7 +116,7 @@ canvas {
 
 .card p {
   font-size: 1em;
-  color: #666;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -172,4 +172,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} /*
+} */
+
+
+
