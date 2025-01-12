@@ -5,11 +5,11 @@ console.log("main.js loaded successfully!");
 for any "click" on the hero element and then
 toggles the "active" class which we use to
 shift colors when they click */
-//let hero = document.querySelector(".hero");
-//hero.addEventListener("click", () => {
- // console.log("They clicked the hero!");
-  //hero.classList.add("animate__wobble");
-//});
+  let cta = document.querySelector(".cta");
+  cta.addEventListener("click", () => {
+  console.log("They clicked to start!");
+  cta.classList.add("active");
+});
 document.addEventListener("DOMContentLoaded", () => {
   let hero = document.querySelector(".hero"); // Had ChatGPT help me with this
   hero.classList.add("active"); 

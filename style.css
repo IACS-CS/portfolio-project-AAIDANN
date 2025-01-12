@@ -16,9 +16,6 @@ main {
   width: 100%; /* Make it span the entire width */
   background-color: #f44786; /* Choose your color */
 }
-
-
-
 body {
   /* Change to something you like, but please do customize the font! */
   font-family: Roboto, "Helvetica Neue", sans-serif;
