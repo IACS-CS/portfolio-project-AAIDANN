@@ -66,7 +66,7 @@ h1 {
   color: #ed1b76;
 }
 
-canvas {
+#real-turtle {
     position: absolute;
     top: 50dvh;
     transform: translate(-50%, -50%);
@@ -78,6 +78,11 @@ canvas {
     pointer-events: none;
 }
 
+#fake-turtle {
+  background-color: #1d807f;
+  position:absolute;
+}
+
 .cta {
   z-index:5;
 }
@@ -87,6 +92,7 @@ canvas {
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
+  
 }
 
 .card {
@@ -97,12 +103,18 @@ canvas {
   padding: 25px;
   width: 300px;
   transition: transform 0.3s;
+  filter:blur(15px);
+}
+
+.card.active {
+  filter:blur(0px);
 }
 
 .card img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  
 }
 
 .card h3 {
@@ -144,6 +156,29 @@ canvas {
 
 h2 {
   font-family: 'Game Of Squids', sans-serif;
+}
+
+.overview {
+  position:absolute;
+  top:145%;
+  z-index:9;
+  font-family: 'Game Of Squids', sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #ed1b76;
+  font-size:64px;
+}
+.overview::after {
+  content: "(Click to view!)";
+  left:50px;
+  top:100px;
+  font-size: 40px;
+  position:absolute;
+  text-align: center;
+}
+
+.overview.active {
+  color:transparent;
+  text-decoration: none;
 }
 
 /* Triangle card 

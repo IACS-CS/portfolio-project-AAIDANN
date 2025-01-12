@@ -5,10 +5,14 @@ console.log("main.js loaded successfully!");
 for any "click" on the hero element and then
 toggles the "active" class which we use to
 shift colors when they click */
-  let cta = document.querySelector(".cta");
-  cta.addEventListener("click", () => {
-  console.log("They clicked to start!");
-  cta.classList.add("active");
+  let overview = document.querySelector(".overview");
+  let cards = document.querySelectorAll(".card");
+  overview.addEventListener("click", () => {
+  console.log("They clicked to view");
+  overview.classList.add("active");
+  cards.forEach((card) => {
+    card.classList.add("active"); //Chat GPT helped out getting EACH of the cards unblurred, instead of just one.
+  });
 });
 document.addEventListener("DOMContentLoaded", () => {
   let hero = document.querySelector(".hero"); // Had ChatGPT help me with this
@@ -18,10 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Select the HTML elements where we'll put
 // the components of our application.
-const canvas = document.querySelector("#real-turtle");
+const canvas = document.querySelector("#real-turtle, #fake-turtle");
 const textDiv = document.querySelector("#text-app");
-
-
 
 // Initialize turtle and text interface objects
 const turtle = new RealTurtle.default(canvas, {
@@ -38,8 +40,6 @@ const turtle = new RealTurtle.default(canvas, {
     turtle.forward(size); 
     turtle.left(120);
   }
-  turtle.penUp();
-  turtle.setPosition(10000, 0);
 };
 
 turtle.setSpeed(0.78);
@@ -50,6 +50,12 @@ turtle.setStrokeStyle("white");
 turtle.start();
 
 drawEquilateralTriangle(700);
+
+
+
+ 
+
+
 
 
 
