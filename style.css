@@ -7,6 +7,18 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  min-height: 100dvh;
+  line-height: 1.8;
+  font-size: 18px;
+  margin: 0; /* Remove auto-centering */
+  padding: 0;
+  width: 100%; /* Make it span the entire width */
+  background-color: #f44786; /* Choose your color */
+}
+
+
+
 body {
   /* Change to something you like, but please do customize the font! */
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -44,6 +56,7 @@ h1 {
   color: black;
   text-decoration: underline;
   text-decoration-color: #ed1b76;
+  z-index:6;
 }
 
 
@@ -54,15 +67,6 @@ h1 {
 .hero.active {
   background: #249f9c;
   color: #ed1b76;
-}
-
-main {
-  /* Make sure our content can scroll the hero away */
-  min-height: 100dvh;
-  max-width: 35em; /* choose a width for text */
-  line-height: 1.8; /* choose a line spacing */
-  font-size: 18px; /* choose a font size */
-  margin: 0 auto; /* center the content */
 }
 
 canvas {
@@ -81,3 +85,91 @@ canvas {
   z-index:5;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #249f9c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: center;
+  padding: 25px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 15px 0;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #1d807f;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.about-me {
+  font-size:20px;
+  color:#333;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Game Of Squids', sans-serif;
+}
+
+/* Triangle card 
+.card:nth-child(2) {
+  background: #fff;
+  border: none; 
+  padding: 0;
+  clip-path: polygon(50% 0%, 10% 100%, 90% 100%); 
+  text-align: center; 
+  overflow: hidden;
+  color: #333; 
+}
+
+
+ 
+.card:nth-child(3) {
+  border-radius: 50%; 
+  aspect-ratio: 1 / 1; 
+  height: 600px; 
+  width: 600px; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} /*
