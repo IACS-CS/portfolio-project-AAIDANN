@@ -33,14 +33,18 @@ const turtle = new RealTurtle.default(canvas, {
 
  const drawEquilateralTriangle =  (size) => {
   turtle.setPosition(250, 900);
+  turtle.beginPath();
   turtle.right(90);
   turtle.penDown();
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
 
     turtle.forward(size); 
     turtle.left(120);
   }
+  turtle.setPosition(2000,0);
+  turtle.closePath();
 };
+
 
 turtle.setSpeed(0.78);
 turtle.setLineWidth(15); 
